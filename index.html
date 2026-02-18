@@ -38,17 +38,20 @@
                 <div class="card-body">
                     <fieldset class="fieldset">
                         <label class="label text-neutral font-bold">Mobile Number</label>
-                        <input type="text" minlength="11" maxlength="11" class="input rounded-full bg-base-200" placeholder="Enter Your 11 Digit Number" />
+                        <input id="input-number" type="text" minlength="11" maxlength="11" class="input rounded-full bg-base-200" placeholder="Enter Your 11 Digit Number" />
 
                         <br />
 
                         <label class="label text-neutral font-bold">4 Digit Pin</label>
-                        <input type="password" maxlength="4" minlength="4" class="input rounded-full bg-base-200" placeholder="Enter 4 Digit Pin" />
+                        <input id="input-pin" type="password" maxlength="4" minlength="4" class="input rounded-full bg-base-200" placeholder="Enter 4 Digit Pin" />
                         <div></div>
-                        <button class="btn btn-primary mt-4 rounded-full">Login</button>
+                        <button id="login-btn" class="btn btn-primary mt-4 rounded-full">Login</button>
                     </fieldset>
                 </div>
             </div>
         </div>
+
+
+        <script src="./script/login.js"></script>
     </body>
 </html>
