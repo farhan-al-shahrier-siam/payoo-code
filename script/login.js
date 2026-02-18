@@ -19,7 +19,7 @@ document.getElementById("login-btn").addEventListener("click", function () {
         window.location.assign('./home.html')
     }else{
         // 3.1 false:::>> alert> return
-        alert("Login Failes");
+        alert("Login Failed");
         return;
     }
 });
