@@ -28,10 +28,12 @@ function showOnly(id){
     console.log("show only clicked")
     const addMoney = document.getElementById("add-money");
     const cashout = document.getElementById("cashout");
+    const history = document.getElementById("history")
 
     /* shobai ke hide kore doa */
     addMoney.classList.add("hidden")
     cashout.classList.add("hidden")
+    history.classList.add("hidden")
 
     /* show only the selected id */
     const selectedId = document.getElementById(id);

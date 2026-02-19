@@ -25,6 +25,26 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
     if (pin === "1020") {
         alert("Cashout Successful");
         setBalance(newBalance);
+        // 1. history-container ta ke niye ashbo
+        const history = document.getElementById("history-container");
+
+        // 2. new div create korbo
+        const newDiv = document.createElement("div");
+
+        // 3. oi div e innerHTML add korbo
+        newDiv.innerHTML = `
+            <div class="transaction-card p-5 bg-base-100 flex justify-between items-center rounded-xl">
+                    <div class=" flex gap-4 items-center">
+                        <img class="h-full" src="./assets/opt-1.png" alt="">
+                        <p class="text-xs">Cashout ${cashoutAmount} TAKA 
+                        to ${cashoutNumber}, <br>at ${new Date()}</p>
+
+                    </div>
+                    <div><i class="fa-solid fa-ellipsis"></i></div>
+                </div>
+        `;
+        // 4. history-container e new div ta append kore dibo
+        history.append(newDiv);
     } else {
         alert("Invalid Pin");
         return;
